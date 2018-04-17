@@ -23,7 +23,7 @@ of the pros / cons when it's a non-trivial choice.
 **Design**  
 I think an OOP-approach might be suitable here.
  
-![UML](http://huerty.com/content/umlSDC.png)  
+![UML](http://huerty.com/content/umlSDC.png) 
 
 pros & cons are dictionaries  
 the key will be a string, value will be the quantifying value for the pro / con
