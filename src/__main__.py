@@ -4,15 +4,16 @@ from src.Action import Action
 ADD_CON = 2
 ADD_PRO = 1
 NEW_ACTION = 1
-EXIT = 0
+EXIT = 2
 DISPLAY_SUMMARY = 3
+GO_BACK = 4
 
 
 class Menu:
     def __init__(self):
         self.running = True
         self.actionMenu = False
-        self.action = Action("dead")
+        self.action = Action("")
 
 
     def printMenu(self):
@@ -42,6 +43,7 @@ class Menu:
 
     def insideActionMenu(self):
         while(self.actionMenu):
+            print("|---"+self.action.actionName+"---|")
             self.printActionMenu()
             userIn = int(input())
 
@@ -49,7 +51,7 @@ class Menu:
             if(userIn == ADD_PRO):
                 print("Please describe the pro...")
                 proString = input()
-                print("Please quantify the pro(1...10)")
+                print("Please quantify the pro(+1...+10)")
                 value = int(input())
                 self.action.addPro(proString, value)
 
@@ -63,9 +65,8 @@ class Menu:
             elif(userIn == DISPLAY_SUMMARY):
                 print(self.action.getSummary())
 
-            elif(userIn == EXIT):
+            elif(userIn == GO_BACK):
                 self.actionMenu = False
-                break
 
 
 if __name__ == "__main__":
