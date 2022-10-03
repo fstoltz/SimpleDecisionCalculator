@@ -1,4 +1,4 @@
-from src.Action import Action
+from Action import Action
 
 
 ADD_CON = 2
