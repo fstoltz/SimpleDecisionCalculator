@@ -1,4 +1,8 @@
 ## SimpleDecisionCalculator  
+
+### How to run program
+Run `python3 src/` in your terminal.
+
 **The aim for this program is to simplify decision-making  
 by quantifying pros / cons in relation to a specified action.**  
   
@@ -28,6 +32,13 @@ like a risky choice, though I'm not entirely sure of how to setup the central da
 the program available to others and not hard-code it to only fit/be available for use only by myself. I'd be interesting
 to be able to have some server running, that keeps track of the database, and then distribute a program
 that clients can run. 
+
+**Update 8/10-2022**
+After some discussion with Yves I added some functionality. It is not complete but it's something that can be finalized. More specifically I have worked with the following:
+- Added another menu item for saving actions to local drive(only interface, not functionality)
+- Fixed so that the menu doesn't print downwards, instead, the terminal is flushed at appropriate places
+
+
 
 **Core functionality**  
 * Menu 
